@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Instruments - [Your Store Name]</title>
+    <link rel="stylesheet" href="stylwew.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="store-logo.png" alt="[Your Store Name] Logo">
+            <h1>[Your Store Name]</h1>
+        </div>
+        <nav class="instrument-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop All Instruments</a></li>
+                <li class="dropdown">
+                    <a href="categories.html">Categories <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="guitars.html">Guitars & Basses</a></li>
+                        <li><a href="keyboards.html">Keyboards & Pianos</a></li>
+                        <li><a href="drums.html">Drums & Percussion</a></li>
+                        <li><a href="orchestral.html">Orchestral</a></li>
+                    </ul>
+                </li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="deals.html">Deals & Offers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shop-main-content">
+        <h2>Shop All Instruments</h2>
+
+        <div class="shop-container">
+            <aside class="sidebar">
+                <h3>Filter Results</h3>
+                
+                <div class="filter-group">
+                    <h4>Instrument Type</h4>
+                    <label><input type="checkbox" name="type" value="guitar"> Guitar</label>
+                    <label><input type="checkbox" name="type" value="piano"> Piano</label>
+                    <label><input type="checkbox" name="type" value="drums"> Drums</label>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="100" max="5000" value="500" class="slider" id="price-range">
+                    <p>Price: $<span id="price-value">500</span> - $5000</p>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Brand</h4>
+                    <select name="brand">
+                        <option value="">All Brands</option>
+                        <option value="fender">Fender</option>
+                        <option value="yamaha">Yamaha</option>
+                        <option value="roland">Roland</option>
+                    </select>
+                </div>
+
+                <button class="apply-filters-btn">Apply Filters</button>
+            </aside>
+
+            <section class="product-listing">
+                <div class="sort-bar">
+                    <p>Showing 1–12 of 48 results</p>
+                    <div class="sort-dropdown">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by">
+                            <option value="featured">Featured</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="newest">Newest Arrivals</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">[Product Image]</div>
+                        <h3>Acoustic Guitar Model X</h3>
+                        <p class="brand">Brand: Yamaha</p>
+                        <p class="price">$499.00</p>
+                        <a href="product-detail.html" class="cta-button secondary-cta">View Details</a>
+                    </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 [Your Store Name]. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
